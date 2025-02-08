@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <title>Canvas with Coordinate System</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            overflow: hidden;
+            width: 100vw;
+            height: 100vh;
+        }
+
+        canvas {
+            background-color: black;
+        }
+
+        .hajo {
+            position: absolute;
+        }
+
+        #raven, #genesis, #star, #marduc, #perilous, #executor, #invader {
+            visibility: hidden;
+            top: 50%;
+            left: 50%;
+        }
+
+        .button-container {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <img class="hajo" id="raven" src="./images/ufo.png" width="40px">
+    <img class="hajo" id="genesis" src="./images/ufo.png" width="40px">
+    <img class="hajo" id="star" src="./images/ufo.png" width="40px">
+    <img class="hajo" id="marduc" src="./images/ufo.png" width="40px">
+    <img class="hajo" id="perilous" src="./images/ufo.png" width="40px">
+    <img class="hajo" id="executor" src="./images/ufo.png" width="40px">
+    <img class="hajo" id="invader" src="./images/ufo.png" width="40px">
+
+    <div class="button-container">
+        <button class="btn btn-primary" style="display: block; margin-bottom: 10px;" onclick="move1()">Mozgás 1</button>
+        <button class="btn btn-primary" style="display: block; margin-bottom: 10px;" onclick="move2()">Mozgás 2</button>
+        <button class="btn btn-primary" style="display: block; margin-bottom: 10px;" onclick="move3()">Mozgás 3</button>
+        <button class="btn btn-primary" style="display: block; margin-bottom: 10px;" onclick="move4()">Mozgás 4</button>
+        <button class="btn btn-primary" style="display: block; margin-bottom: 10px;" onclick="move5()">Mozgás 5</button>
+        <button class="btn btn-primary" style="display: block; margin-bottom: 10px;" onclick="move6()">Mozgás 6</button>
+    </div>
+
+    <canvas id="canvas"></canvas>
+    <script src="./js/index.js"></script>
+</body>
+
+</html>
